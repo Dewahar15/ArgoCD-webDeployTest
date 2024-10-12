@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: argoCD-test
-  name: argoCD-test
+    app: argocd-test
+  name: argocd-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: argoCD-test
+      app: argocd-test
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: argoCD-test
+        app: argocd-test
     spec:
       containers:
       - image: vimal13/apache-webserver-php
