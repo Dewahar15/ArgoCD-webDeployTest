@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: argocd-test
+    app.kubernetes.io/instance: myfirst-app
+  name: argocd-test
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: argocd-test
+  type: LoadBalancer
+status:
+  loadBalancer: {}
